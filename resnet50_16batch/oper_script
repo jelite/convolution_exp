@@ -1,0 +1,870 @@
+
+oper_1:
+    layer: Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    input_size: torch.Size([16, 3, 224, 224])
+
+
+oper_2:
+    layer: BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 64, 112, 112])
+
+
+oper_3:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 64, 112, 112])
+
+
+oper_4:
+    layer: MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    input_size: torch.Size([16, 64, 112, 112])
+
+
+oper_5:
+    layer: Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_6:
+    layer: BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_7:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_8:
+    layer: Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_9:
+    layer: BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_10:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_11:
+    layer: Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_12:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_13:
+    layer: Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_14:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_15:
+    layer: Add()
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_16:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_17:
+    layer: Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_18:
+    layer: BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_19:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_20:
+    layer: Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_21:
+    layer: BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_22:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_23:
+    layer: Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_24:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_25:
+    layer: Add()
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_26:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_27:
+    layer: Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_28:
+    layer: BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_29:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_30:
+    layer: Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_31:
+    layer: BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_32:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_33:
+    layer: Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 64, 56, 56])
+
+
+oper_34:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_35:
+    layer: Add()
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_36:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_37:
+    layer: Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_38:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 56, 56])
+
+
+oper_39:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 56, 56])
+
+
+oper_40:
+    layer: Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 56, 56])
+
+
+oper_41:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_42:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_43:
+    layer: Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_44:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_45:
+    layer: Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    input_size: torch.Size([16, 256, 56, 56])
+
+
+oper_46:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_47:
+    layer: Add()
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_48:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_49:
+    layer: Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_50:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_51:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_52:
+    layer: Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_53:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_54:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_55:
+    layer: Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_56:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_57:
+    layer: Add()
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_58:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_59:
+    layer: Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_60:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_61:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_62:
+    layer: Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_63:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_64:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_65:
+    layer: Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_66:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_67:
+    layer: Add()
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_68:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_69:
+    layer: Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_70:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_71:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_72:
+    layer: Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_73:
+    layer: BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_74:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_75:
+    layer: Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 128, 28, 28])
+
+
+oper_76:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_77:
+    layer: Add()
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_78:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_79:
+    layer: Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_80:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 28, 28])
+
+
+oper_81:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 28, 28])
+
+
+oper_82:
+    layer: Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 28, 28])
+
+
+oper_83:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_84:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_85:
+    layer: Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_86:
+    layer: BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_87:
+    layer: Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    input_size: torch.Size([16, 512, 28, 28])
+
+
+oper_88:
+    layer: BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_89:
+    layer: Add()
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_90:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_91:
+    layer: Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_92:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_93:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_94:
+    layer: Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_95:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_96:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_97:
+    layer: Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_98:
+    layer: BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_99:
+    layer: Add()
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_100:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_101:
+    layer: Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_102:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_103:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_104:
+    layer: Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_105:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_106:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_107:
+    layer: Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_108:
+    layer: BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_109:
+    layer: Add()
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_110:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_111:
+    layer: Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_112:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_113:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_114:
+    layer: Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_115:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_116:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_117:
+    layer: Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_118:
+    layer: BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_119:
+    layer: Add()
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_120:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_121:
+    layer: Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_122:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_123:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_124:
+    layer: Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_125:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_126:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_127:
+    layer: Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_128:
+    layer: BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_129:
+    layer: Add()
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_130:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_131:
+    layer: Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_132:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_133:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_134:
+    layer: Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_135:
+    layer: BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_136:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_137:
+    layer: Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 256, 14, 14])
+
+
+oper_138:
+    layer: BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_139:
+    layer: Add()
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_140:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_141:
+    layer: Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_142:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 14, 14])
+
+
+oper_143:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 14, 14])
+
+
+oper_144:
+    layer: Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 14, 14])
+
+
+oper_145:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_146:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_147:
+    layer: Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_148:
+    layer: BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_149:
+    layer: Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+    input_size: torch.Size([16, 1024, 14, 14])
+
+
+oper_150:
+    layer: BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_151:
+    layer: Add()
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_152:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_153:
+    layer: Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_154:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_155:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_156:
+    layer: Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_157:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_158:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_159:
+    layer: Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_160:
+    layer: BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_161:
+    layer: Add()
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_162:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_163:
+    layer: Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_164:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_165:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_166:
+    layer: Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_167:
+    layer: BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_168:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_169:
+    layer: Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    input_size: torch.Size([16, 512, 7, 7])
+
+
+oper_170:
+    layer: BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_171:
+    layer: Add()
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_172:
+    layer: ReLU(inplace=True)
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_173:
+    layer: AdaptiveAvgPool2d(output_size=(1, 1))
+    input_size: torch.Size([16, 2048, 7, 7])
+
+
+oper_174:
+    layer: Linear(in_features=2048, out_features=1000, bias=True)
+    input_size: torch.Size([16, 2048])
+
